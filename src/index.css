@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #0a0a0f;
+  color: #f1f0fb;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(167,139,250,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(167,139,250,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px; bottom: 8px;
+  width: 1px;
+  background: linear-gradient(to bottom, #a78bfa, transparent);
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 12px 12px 0 0;
+}
+.skill-card:hover::before { opacity: 1; }
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 0% 100%, rgba(167,139,250,0.06) 0%, transparent 60%);
+  pointer-events: none;
+  border-radius: 16px;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-backdrop {
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(12px);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0f; }
+::-webkit-scrollbar-thumb { background: #3d3d52; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a78bfa; }
+
+
+:root,
+[data-theme="dark"] {
+  --color-bg: #0a0a0f;
+  --color-surface: #1e1e2e;
+  --color-subtle: #3d3d52;
+  --color-muted: #8b8aa0;
+  --color-text: #f1f0fb;
+  --color-accent: #a78bfa;
+  --color-accent3: #c4b5fd;
+  --color-teal: #5eead4;
+  --color-amber: #fbbf24;
+}
+
+[data-theme="light"] {
+  --color-bg: #f8f7ff;
+  --color-surface: #ffffff;
+  --color-subtle: #ddd9f5;
+  --color-muted: #6b6880;
+  --color-text: #1a1830;
+  --color-accent: #7c3aed;
+  --color-accent3: #5b21b6;
+  --color-teal: #0f766e;
+  --color-amber: #b45309;
+}

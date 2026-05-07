@@ -1,0 +1,84 @@
+import { useEffect, useRef } from 'react';
+import { education } from '../data/portfolio';
+
+export default function Education() {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) ref.current?.classList.add('visible'); },
+      { threshold: 0.1 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section id="education" className="py-24 px-8 md:px-16 max-w-6xl mx-auto">
+      <div ref={ref} className="fade-section">
+        <p
+          className="mb-2"
+          style={{ fontFamily: '"DM Mono", monospace', fontSize: '0.75rem', color: '#a78bfa', letterSpacing: '0.15em', textTransform: 'uppercase' }}
+        >
+          {/* education */}
+        </p>
+        <h2
+          className="mb-12 tracking-tight"
+          style={{ fontFamily: '"DM Serif Display", serif', fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#f1f0fb', lineHeight: 1.1 }}
+        >
+          Academic background
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {education.map((edu, i) => (
+            <div
+              key={i}
+              className="rounded-2xl p-8 border"
+              style={{ background: '#1e1e2e', borderColor: '#3d3d52' }}
+            >
+              <p
+                className="mb-1 font-semibold leading-snug"
+                style={{ fontSize: '1rem', color: '#f1f0fb' }}
+              >
+                {edu.degree}
+              </p>
+              <p
+                className="mb-0.5"
+                style={{ fontSize: '0.875rem', color: '#8b8aa0' }}
+              >
+                {edu.school}
+              </p>
+              <p
+                className="mb-3"
+                style={{ fontFamily: '"DM Mono", monospace', fontSize: '0.75rem', color: '#a78bfa' }}
+              >
+                {edu.period}
+              </p>
+
+              {edu.distinction && (
+                <span
+                  className="inline-block px-3 py-1 rounded-full text-xs border mb-3"
+                  style={{
+                    fontFamily: '"DM Mono", monospace',
+                    background: 'rgba(251,191,36,0.1)',
+                    color: '#fbbf24',
+                    borderColor: 'rgba(251,191,36,0.25)',
+                  }}
+                >
+                  🏅 Graduated with Distinction
+                </span>
+              )}
+
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: '#8b8aa0' }}
+              >
+                {edu.note}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
