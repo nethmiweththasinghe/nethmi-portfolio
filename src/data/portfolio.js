@@ -27,7 +27,7 @@ export const skills = [
 
 export const experience = [
   {
-    period: 'Aug 2025 – Present',
+    period: 'Aug 2025 - Present',
     role: 'Web Developer',
     company: 'Academic Dress Hire',
     location: 'Auckland, NZ',
@@ -42,7 +42,7 @@ export const experience = [
     stack: ['React.js', 'D3.js', '.NET C#', 'PostgreSQL', 'Azure', 'GitHub Copilot'],
   },
   {
-    period: 'Mar 2023 – Jun 2024',
+    period: 'Mar 2023 - Jun 2024',
     role: 'Associate Software Engineer',
     company: 'LB Finance PLC',
     location: 'Sri Lanka',
@@ -56,7 +56,7 @@ export const experience = [
     stack: ['Angular', '.NET Core C#', 'SQL Server', 'TypeScript', 'Azure'],
   },
   {
-    period: 'Jul 2022 – Feb 2023',
+    period: 'Jul 2022 - Feb 2023',
     role: 'Intern Software Engineer',
     company: 'LB Finance PLC',
     location: 'Sri Lanka',
@@ -102,7 +102,7 @@ export const education = [
     degree: 'Master of Information Sciences',
     school: 'Massey University',
     location: 'Auckland, NZ',
-    period: 'Jul 2024 – Nov 2025',
+    period: 'Jul 2024 - Nov 2025',
     distinction: true,
     note: '60-credit industry capstone project covering the full software delivery lifecycle.',
   },
@@ -110,7 +110,7 @@ export const education = [
     degree: 'BSc in Management Information Systems (Special)',
     school: 'NSBM Green University',
     location: 'Sri Lanka',
-    period: 'Oct 2019 – Nov 2023',
+    period: 'Oct 2019 - Nov 2023',
     distinction: false,
     note: 'Covered ERP, SaaS, system integration, and data-driven workflows across both business and IT domains.',
   },

@@ -1,13 +1,15 @@
-import { useEffect, useRef } from 'react';
-import { education } from '../data/portfolio';
+import { useEffect, useRef } from "react";
+import { education } from "../data/portfolio";
 
 export default function Education() {
   const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) ref.current?.classList.add('visible'); },
-      { threshold: 0.1 }
+      ([entry]) => {
+        if (entry.isIntersecting) ref.current?.classList.add("visible");
+      },
+      { threshold: 0.1 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -16,15 +18,14 @@ export default function Education() {
   return (
     <section id="education" className="py-24 px-8 md:px-16 max-w-6xl mx-auto">
       <div ref={ref} className="fade-section">
-        <p
-          className="mb-2"
-          style={{ fontFamily: '"DM Mono", monospace', fontSize: '0.75rem', color: '#a78bfa', letterSpacing: '0.15em', textTransform: 'uppercase' }}
-        >
-          {/* education */}
-        </p>
         <h2
           className="mb-12 tracking-tight"
-          style={{ fontFamily: '"DM Serif Display", serif', fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#f1f0fb', lineHeight: 1.1 }}
+          style={{
+            fontFamily: '"DM Serif Display", serif',
+            fontSize: "clamp(2rem, 4vw, 3rem)",
+            color: "var(--color-text)",
+            lineHeight: 1.1,
+          }}
         >
           Academic background
         </h2>
@@ -34,23 +35,30 @@ export default function Education() {
             <div
               key={i}
               className="rounded-2xl p-8 border"
-              style={{ background: '#1e1e2e', borderColor: '#3d3d52' }}
+              style={{
+                background: "var(--color-surface)",
+                borderColor: "var(--color-subtle)",
+              }}
             >
               <p
                 className="mb-1 font-semibold leading-snug"
-                style={{ fontSize: '1rem', color: '#f1f0fb' }}
+                style={{ fontSize: "1rem", color: "var(--color-text)" }}
               >
                 {edu.degree}
               </p>
               <p
                 className="mb-0.5"
-                style={{ fontSize: '0.875rem', color: '#8b8aa0' }}
+                style={{ fontSize: "0.875rem", color: "var(--color-muted)" }}
               >
                 {edu.school}
               </p>
               <p
                 className="mb-3"
-                style={{ fontFamily: '"DM Mono", monospace', fontSize: '0.75rem', color: '#a78bfa' }}
+                style={{
+                  fontFamily: '"DM Mono", monospace',
+                  fontSize: "0.75rem",
+                  color: "var(--color-accent)",
+                }}
               >
                 {edu.period}
               </p>
@@ -60,9 +68,9 @@ export default function Education() {
                   className="inline-block px-3 py-1 rounded-full text-xs border mb-3"
                   style={{
                     fontFamily: '"DM Mono", monospace',
-                    background: 'rgba(251,191,36,0.1)',
-                    color: '#fbbf24',
-                    borderColor: 'rgba(251,191,36,0.25)',
+                    background: "rgba(251,191,36,0.1)",
+                    color: "#fbbf24",
+                    borderColor: "rgba(251,191,36,0.25)",
                   }}
                 >
                   🏅 Graduated with Distinction
@@ -71,7 +79,7 @@ export default function Education() {
 
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: '#8b8aa0' }}
+                style={{ color: "var(--color-muted)" }}
               >
                 {edu.note}
               </p>
