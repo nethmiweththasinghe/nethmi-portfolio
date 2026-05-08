@@ -62,20 +62,18 @@ export default function Education() {
               >
                 {edu.period}
               </p>
-
-              {edu.distinction && (
-                <span
-                  className="inline-block px-3 py-1 rounded-full text-xs border mb-3"
-                  style={{
-                    fontFamily: '"DM Mono", monospace',
-                    background: "rgba(251,191,36,0.1)",
-                    color: "#fbbf24",
-                    borderColor: "rgba(251,191,36,0.25)",
-                  }}
-                >
-                  🏅 Graduated with Distinction
-                </span>
-              )}
+        
+              <span
+                className="inline-block px-3 py-1 rounded-full text-xs border mb-3"
+                style={{
+                  fontFamily: '"DM Mono", monospace',
+                  background: "rgba(251,191,36,0.1)",
+                  color: "#fbbf24",
+                  borderColor: "rgba(251,191,36,0.25)",
+                }}
+              >
+                {edu.grade}
+              </span>
 
               <p
                 className="text-sm leading-relaxed"

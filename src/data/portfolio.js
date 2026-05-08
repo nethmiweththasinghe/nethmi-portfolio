@@ -5,7 +5,7 @@ export const skills = [
   },
   {
     category: 'Frameworks',
-    items: ['React', 'Angular', 'ASP.NET', '.NET Core', 'D3.js'],
+    items: ['React', 'Angular', 'ASP.NET', '.NET Core', 'SpringBoot'],
   },
   {
     category: 'Databases',
@@ -30,7 +30,7 @@ export const experience = [
     period: 'Aug 2025 - Present',
     role: 'Web Developer',
     company: 'Academic Dress Hire',
-    location: 'Auckland, NZ',
+    location: 'New Zealand',
     current: true,
     bullets: [
       'Built and maintained full-stack applications using React, .NET, and PostgreSQL with modular, domain-driven architecture.',
@@ -79,6 +79,14 @@ export const projects = [
       'Full-stack order management platform for academic regalia rentals. Built with React, .NET, and PostgreSQL using modular domain-driven design. Features a multi-step ordering UX, REST APIs, and Azure CI/CD pipelines for reliable deployments.',
     stack: ['React', '.NET', 'PostgreSQL', 'Azure', 'CI/CD'],
   },
+  // {
+  //   icon: '🎥',
+  //   type: 'Client Project',
+  //   title: 'Photo Gallary for Fern Lens Photography',
+  //   description:
+  //     'React',
+  //   stack: ['React', 'JavaScript', 'Vite', 'CSS'],
+  // },
   {
     icon: '🤝',
     type: 'Academic Project',
@@ -104,6 +112,7 @@ export const education = [
     location: 'Auckland, NZ',
     period: 'Jul 2024 - Nov 2025',
     distinction: true,
+    grade: '🏅 Graduated with Distinction',
     note: '60-credit industry capstone project covering the full software delivery lifecycle.',
   },
   {
@@ -112,6 +121,7 @@ export const education = [
     location: 'Sri Lanka',
     period: 'Oct 2019 - Nov 2023',
     distinction: false,
+    grade: '🏅 Graduated with Second Class Upper',
     note: 'Covered ERP, SaaS, system integration, and data-driven workflows across both business and IT domains.',
   },
 ];

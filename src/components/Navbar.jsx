@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 
 const links = [
-  { href: "#about", label: "about" },
-  { href: "#skills", label: "skills" },
-  { href: "#experience", label: "experience" },
-  { href: "#projects", label: "projects" },
-  { href: "#education", label: "education" },
-  { href: "#contact", label: "contact" },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar({ onToggleTheme, theme }) {
   const [scrolled, setScrolled] = useState(false);
-
+  const [menuOpen, setMenuOpen] = useState(false);
   console.log(theme);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Navbar({ onToggleTheme, theme }) {
           fontFamily: '"DM Mono", monospace',
         }}
       >
-        photo
+        {/* photo */}
       </span>
 
       <ul className="hidden md:flex gap-8 list-none">
@@ -65,23 +65,45 @@ export default function Navbar({ onToggleTheme, theme }) {
         {theme === "dark" ? "☀️" : "🌙"}
       </button>
 
-      {/* Mobile: just show initials */}
-      <div className="md:hidden flex gap-4">
-        {links.slice(0, 3).map((l) => (
-          <a
-            key={l.href}
-            href={l.href}
-            className="text-xs"
-            style={{
-              color: "#8b8aa0",
-              textDecoration: "none",
-              fontFamily: '"DM Mono", monospace',
-            }}
-          >
-            {l.label.slice(0, 3)}
-          </a>
-        ))}
-      </div>
+      {/* In the nav, replace the mobile div with: */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="md:hidden"
+        style={{
+          color: "var(--color-accent)",
+          background: "none",
+          border: "none",
+          fontSize: "1.4rem",
+          cursor: "pointer",
+        }}
+      >
+        {menuOpen ? "✕" : "☰"}
+      </button>
+
+      {/* And add a dropdown below the nav*/}
+      {menuOpen && (
+        <div
+          className="md:hidden fixed top-16 left-0 right-0 z-40 py-4 flex flex-col items-center gap-4 nav-backdrop border-b"
+          style={{ borderColor: "var(--color-subtle)" }}
+        >
+          {links.map((l) => (
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setMenuOpen(false)}
+              style={{
+                color: "var(--color-muted)",
+                textDecoration: "none",
+                fontFamily: "Outfit, sans-serif",
+                fontSize: "0.95rem",
+              }}
+            >
+              {l.label}
+            </a>
+          ))}
+        </div>
+      )}
+      {/* )} */}
     </nav>
   );
 }
