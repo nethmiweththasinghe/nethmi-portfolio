@@ -1,3 +1,5 @@
+import profilePhoto from '../img/my-photo.jpg';
+
 export default function Description() {
   return (
     <section
@@ -195,7 +197,7 @@ export default function Description() {
             <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-purple-500/20 via-transparent to-teal-400/10 blur-xl" />
 
             <img
-              src="/src/img/my-photo.jpg"
+              src={profilePhoto}
               alt="Nethmi Weththasinghe"
               className="relative w-full h-full rounded-full object-cover border border-white/10 shadow-2xl"
             />
