@@ -73,20 +73,20 @@ export const experience = [
 export const projects = [
   {
     icon: '🎓',
-    type: 'Client Project',
-    title: 'Hire & Buy Regalia Web Application',
+    type: 'Client Project (On-going)',
+    title: 'Hire & Buy Regalia Web Application and CMS Platform for Academic Dress Hire',
     description:
       'Full-stack order management platform for academic regalia rentals. Built with React, .NET, and PostgreSQL using modular domain-driven design. Features a multi-step ordering UX, REST APIs, and Azure CI/CD pipelines for reliable deployments.',
     stack: ['React', '.NET', 'PostgreSQL', 'Azure', 'CI/CD'],
   },
-  // {
-  //   icon: '🎥',
-  //   type: 'Client Project',
-  //   title: 'Photo Gallary for Fern Lens Photography',
-  //   description:
-  //     'React',
-  //   stack: ['React', 'JavaScript', 'Vite', 'CSS'],
-  // },
+  {
+    icon: '🎥',
+    type: 'Client Project (On-going)',
+    title: 'Portfolio & Booking Platform for FernLens Photography',
+    description:
+      'Photography portfolio website built for a New Zealand-based photographer. Features a dynamic masonry photo gallery with category filtering, lightbox viewer, hero slideshow, dark/light theme toggle, and Koalendar booking integration for client session scheduling.',
+    stack: ['React', 'JavaScript', 'Vite', 'CSS', 'Git'],
+  },
   {
     icon: '🤝',
     type: 'Academic Project',
