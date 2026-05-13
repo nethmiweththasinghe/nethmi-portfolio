@@ -30,7 +30,7 @@ export default function Projects() {
           Things I've built
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {projects.map((p, i) => (
             <div
               key={i}
@@ -78,6 +78,15 @@ export default function Projects() {
                 style={{ color: "var(--color-muted)" }}
               >
                 {p.description}
+              </p>
+
+              <p
+                className="text-sm leading-relaxed mb-5"
+                style={{ color: "#aa7321" }}
+              >
+                <a href={p.link} target="_blank" rel="noopener noreferrer">
+                  {p.link ? "View Website" : ""}
+                </a>
               </p>
 
               <div className="flex flex-wrap gap-1.5">

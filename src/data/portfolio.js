@@ -81,11 +81,12 @@ export const projects = [
   },
   {
     icon: '🎥',
-    type: 'Client Project (On-going)',
-    title: 'Portfolio & Booking Platform for FernLens Photography',
+    type: 'Client Project',
+    title: 'Photo Gallary for Fern Lens Photography',
     description:
-      'Photography portfolio website built for a New Zealand-based photographer. Features a dynamic masonry photo gallery with category filtering, lightbox viewer, hero slideshow, dark/light theme toggle, and Koalendar booking integration for client session scheduling.',
-    stack: ['React', 'JavaScript', 'Vite', 'CSS', 'Git'],
+      'Built a client-facing photography portfolio website featuring a dynamic masonry gallery with category filtering, lightbox viewer, and slideshow, demonstrating strong front-end UI/UX skills. Integrated Koalendar booking API to enable seamless client session scheduling, connecting front-end interactions with third-party service workflows and dark/light theme toggle and fully responsive design, ensuring a polished, accessible experience across all devices. Applied CSS pre-processors and modern JavaScript techniques for maintainable, performant styling and animations.',
+    link: 'https://www.fernlensphotography.nz/',
+    stack: ['React', 'JavaScript', 'Vite', 'CSS'],
   },
   {
     icon: '🤝',
