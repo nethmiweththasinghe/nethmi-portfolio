@@ -31,22 +31,17 @@ src/
 │   ├── Contact.jsx
 │   └── Divider.jsx
 ├── data/
-│   └── portfolio.js   <-- Edit your info here!
+│   └── portfolio.js
 ├── App.jsx
 └── index.css
 ```
 
 ## Customising
 
-All personal data lives in `src/data/portfolio.js`. Edit that file to update content without touching components.
+All personal data lives in `src/data/portfolio.js`. Can edit that file to update content without touching components.
 
 ## Deploy to Vercel (free)
 
 1. Push to a GitHub repo
 2. Import at vercel.com
 3. Click Deploy — done!
-
-## Deploy to Netlify (free)
-
-1. Run `npm run build`
-2. Drag the `dist/` folder to netlify.com/drop
