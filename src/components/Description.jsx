@@ -25,7 +25,7 @@ export default function Description() {
           top: 0,
           right: 0,
           width: "540px",
-          height: "260px",
+          height: "250px",
           zIndex: 0,
           maskImage: "radial-gradient(ellipse 75% 75% at 75% 25%, black 30%, transparent 100%)",
           WebkitMaskImage: "radial-gradient(ellipse 75% 75% at 75% 25%, black 30%, transparent 100%)",
