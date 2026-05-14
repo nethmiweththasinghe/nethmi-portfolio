@@ -1,19 +1,19 @@
 export const skills = [
   {
     category: 'Languages',
-    items: ['TypeScript', 'C#', 'JavaScript', 'Python', 'Java', 'HTML/CSS'],
+    items: ['TypeScript', 'JavaScript', 'C#', 'Python', 'Java', 'HTML5', 'CSS3'],
   },
   {
-    category: 'Frameworks',
-    items: ['React', 'Angular', 'ASP.NET', '.NET Core', 'SpringBoot'],
+    category: 'Frameworks & Libraries',
+    items: ['React', 'Angular', 'ASP.NET', 'three.js', '.NET Core', 'SpringBoot'],
   },
   {
     category: 'Databases',
-    items: ['PostgreSQL', 'SQL Server', 'MySQL'],
+    items: ['PostgreSQL', 'SQL Server', 'MySQL', 'MongoDB'],
   },
   {
     category: 'Cloud & DevOps',
-    items: ['Microsoft Azure', 'Docker', 'CI/CD Pipelines', 'Git'],
+    items: ['Microsoft Azure', 'Docker', 'CI/CD Pipelines', 'Git', 'Vercel'],
   },
   {
     category: 'Testing',
@@ -21,7 +21,7 @@ export const skills = [
   },
   {
     category: 'Practices',
-    items: ['Clean Architecture', 'DDD', 'OWASP', 'Agile / Scrum', 'GitHub Copilot'],
+    items: ['Clean Architecture', 'DDD', 'OWASP', 'Agile/ Scrum', 'GitHub Copilot'],
   },
 ];
 
@@ -77,7 +77,7 @@ export const projects = [
     title: 'Hire & Buy Regalia Web Application and CMS Platform for Academic Dress Hire',
     description:
       'Full-stack order management platform for academic regalia rentals. Built with React, .NET, and PostgreSQL using modular domain-driven design. Features a multi-step ordering UX, REST APIs, and Azure CI/CD pipelines for reliable deployments.',
-    stack: ['React', '.NET', 'PostgreSQL', 'Azure', 'CI/CD'],
+    stack: ['React.js', '.NET(C#)', 'PostgreSQL', 'Azure', 'CI/CD'],
   },
   {
     icon: '🎥',
@@ -86,7 +86,7 @@ export const projects = [
     description:
       'Built a client-facing photography portfolio website featuring a dynamic masonry gallery with category filtering, lightbox viewer, and slideshow, demonstrating strong front-end UI/UX skills. Integrated Koalendar booking API to enable seamless client session scheduling, connecting front-end interactions with third-party service workflows and dark/light theme toggle and fully responsive design, ensuring a polished, accessible experience across all devices. Applied CSS pre-processors and modern JavaScript techniques for maintainable, performant styling and animations.',
     link: 'https://www.fernlensphotography.nz/',
-    stack: ['React', 'JavaScript', 'Vite', 'CSS'],
+    stack: ['React.js', 'JavaScript', 'Vite', 'CSS', 'Vercel'],
   },
   {
     icon: '🤝',

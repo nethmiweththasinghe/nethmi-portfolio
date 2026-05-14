@@ -18,6 +18,22 @@ export default function Description() {
       />
       <div className="absolute inset-0 hero-grid pointer-events-none" style={{ zIndex: 0 }} />
 
+      {/* ── Mobile only: compact rings in top-right corner ── */}
+      <div
+        className="md:hidden absolute pointer-events-none"
+        style={{
+          top: 0,
+          right: 0,
+          width: "540px",
+          height: "260px",
+          zIndex: 0,
+          maskImage: "radial-gradient(ellipse 75% 75% at 75% 25%, black 30%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(ellipse 75% 75% at 75% 25%, black 30%, transparent 100%)",
+        }}
+      >
+        <ThreeBackground compact />
+      </div>
+
       {/* Main two-column layout */}
       <div
         className="relative w-full flex flex-col md:flex-row items-center justify-between gap-0"
@@ -47,7 +63,6 @@ export default function Description() {
 
           {/* ── Name row: photo + headline side by side ── */}
           <div className="flex items-center gap-5 mb-4">
-            {/* Profile photo — small, beside the name */}
             <div className="relative flex-shrink-0">
               <div
                 className="absolute -inset-1.5 rounded-full"
@@ -72,7 +87,6 @@ export default function Description() {
               />
             </div>
 
-            {/* Name */}
             <h1
               className="leading-[1.05] tracking-tight"
               style={{
@@ -162,7 +176,7 @@ export default function Description() {
           >
             {[
               { num: "2+",  label: "Years exp." },
-              { num: "3",   label: "Projects" },
+              { num: "5+",   label: "Projects" },
               { num: "MSc", label: "Distinction" },
             ].map((s) => (
               <div key={s.label}>
@@ -193,7 +207,7 @@ export default function Description() {
           </div>
         </div>
 
-        {/* ── RIGHT: Floating Rings ── */}
+        {/* ── RIGHT: Floating Rings — desktop only ── */}
         <div
           className="flex-shrink-0 hidden md:block"
           style={{ width: "820px", height: "660px", position: "relative" }}

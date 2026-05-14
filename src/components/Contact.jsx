@@ -40,7 +40,7 @@ export default function Contact() {
           style={{ fontSize: "0.95rem", color: "var(--color-muted)" }}
         >
           I'm currently open to new opportunities in Auckland and beyond.
-          Whether it's a full-time role, contract, or just a chat — feel free to
+          Whether it's a full-time role, contract, or just a chat feel free to
           reach out.
         </p>
 
