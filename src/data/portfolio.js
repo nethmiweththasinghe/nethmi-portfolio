@@ -80,6 +80,14 @@ export const projects = [
     stack: ['React.js', '.NET(C#)', 'PostgreSQL', 'Azure', 'CI/CD'],
   },
   {
+    icon: '🍻',
+    type: 'Client Project',
+    title: 'Restaurant & Bar Website for Fools n Horses Ale House',
+    description:
+      "I've been building and maintaining the website for Fools n Horses Ale House, a proper British pub in Browns Bay, Auckland. The site covers their full food & drinks menu, upcoming events, and a table booking system.",
+    stack: ['React.js', 'SupaBase', 'PostgreSQL', 'Git', 'Vercel', 'CI/CD'],
+  },
+  {
     icon: '🎥',
     type: 'Client Project',
     title: 'Photo Gallary for Fern Lens Photography',
