@@ -1,4 +1,4 @@
-# Nethmi Weththasinghe — Portfolio
+# Nethmi Weththasinghe - Portfolio
 
 A modern, dark-themed personal portfolio built with **React + Vite + Tailwind CSS**.
 

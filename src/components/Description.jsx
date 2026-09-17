@@ -18,7 +18,7 @@ export default function Description() {
       />
       <div className="absolute inset-0 hero-grid pointer-events-none" style={{ zIndex: 0 }} />
 
-      {/* ── Mobile only: compact rings in top-right corner ── */}
+      {/* - Mobile only: compact rings in top-right corner - */}
       <div
         className="md:hidden absolute pointer-events-none"
         style={{
@@ -40,8 +40,8 @@ export default function Description() {
         style={{ zIndex: 1 }}
       >
 
-        {/* ── LEFT: all text content ── */}
-        <div className="w-full max-w-lg animate-[fadeUp_0.8s_ease_both] flex flex-col">
+        {/* - LEFT: all text content - */}
+        <div className="w-full max-w-lg animate-[fadeUp_0.8s_ease_both] flex flex-col pl-6 md:pl-12 lg:pl-16">
 
           {/* Badge */}
           <div
@@ -61,7 +61,7 @@ export default function Description() {
             Available for opportunities · New Zealand
           </div>
 
-          {/* ── Name row: photo + headline side by side ── */}
+          {/* - Name row: photo + headline side by side - */}
           <div className="flex items-center gap-5 mb-4">
             <div className="relative flex-shrink-0">
               <div
@@ -207,7 +207,7 @@ export default function Description() {
           </div>
         </div>
 
-        {/* ── RIGHT: Floating Rings — desktop only ── */}
+        {/* - RIGHT: Floating Rings — desktop only - */}
         <div
           className="flex-shrink-0 hidden md:block"
           style={{ width: "820px", height: "660px", position: "relative" }}
