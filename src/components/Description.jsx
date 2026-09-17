@@ -111,7 +111,7 @@ export default function Description() {
             <strong style={{ color: "var(--color-text)", fontWeight: 500 }}>
               Full-Stack Software Engineer
             </strong>{" "}
-            with 2+ years building reliable, customer-facing applications across finance and
+            with 3+ years building reliable, customer-facing applications across finance and
             retail. Master of Information Sciences,{" "}
             <strong style={{ color: "var(--color-text)", fontWeight: 500 }}>Distinction</strong>.
           </p>
@@ -175,7 +175,7 @@ export default function Description() {
             style={{ borderTop: "1px solid var(--color-subtle)" }}
           >
             {[
-              { num: "2+",  label: "Years exp." },
+              { num: "3+",  label: "Years exp." },
               { num: "5+",   label: "Projects" },
               { num: "MSc", label: "Distinction" },
             ].map((s) => (

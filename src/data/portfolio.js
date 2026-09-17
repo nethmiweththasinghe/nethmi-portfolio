@@ -62,7 +62,7 @@ export const experience = [
     ],
     stack: [
       "React.js",
-      "D3.js",
+      "JavaScript",
       ".NET C#",
       "PostgreSQL",
       "Azure",
